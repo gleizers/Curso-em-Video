@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Código em JS</title>
+</head>
+<style>
+    body {
+        background-color: burlywood; /* Comentário em CSS */
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18pt;
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Olá, Mundo!</h1> <!--Comentário em HTML5-->
+    <p>Me livrei da maldição.</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um valor: '))// O comando window.prompt retorna String
+        var n2 = Number(window.prompt('Digite outro valor: '))//String
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}.`) //Concatenação
+
+        //(number + number) para adição
+        //(String + String) para concatenação
+
+        //String -> Number
+        //Number.parseInt e Number.parseFloat convertem o string para numero inteiro ou real.
+        //Existe a maneira mais recente que é apenas o Number, onde o JS lê e decide se é real ou inteiro.
+
+        //Number -> String
+        //String(n)
+        //n.toString()
+
+        //FORMATANDO STRINGS
+        // var s = 'JavaScript'
+        //'Eu estou aprendendo s' ---- não faz interpolação
+        //'Eu estou aprendendo' + s ------- Usa concatenação
+        //`Eu estou aprendendo ${s}` --- usa template string
+        //-----------------------------------------------
+        //s.length  // quantos caracteres a string tem
+        //s.toUpperCase() // tudo para 'MAIÚSCULAS'
+        //s.toLowerCase () // tudo para 'minúsculas'
+    </script>    
+</body>
+</html>
